@@ -1,0 +1,169 @@
+
+/* nope */
+
+@font-face {
+    font-family: aquire;
+    src: url(./Aquire-BW0ox.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: aquire;
+}
+
+
+
+
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #201250;
+}
+
+header {
+    display: flex;
+    height: 500px;
+    height: 70dvh;
+    background-image: url(./images/1LpcnL4.jpeg);
+    /* background-image: url(./images/scary-face.jpg); */
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header nav {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #00000090;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    user-select: none;
+}
+
+header nav ul, nav ul span {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fefefe;
+}
+
+header nav .navItems2 i {
+    display: none;
+}
+
+header nav .navItems2 {
+    width: 11dvw;
+}
+
+header nav .navItems2 a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+header nav .navItems2 span {
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+header nav .navItems2 li {
+    border-bottom: 2px solid transparent;
+    transition: all .5s;
+}
+
+header nav .navItems2 li:hover {
+    border-color: #fefefe;
+}
+
+
+header .title {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+    color: #fefefe;
+}
+
+
+.scroll, .nothing {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.nothing {
+    margin-bottom: 50px;
+}
+
+.nothing * {
+    padding: 25px 0;
+}
+
+.nothing a {
+    color: #fefefe;
+    background-color: #ff9900;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 7px;
+    box-shadow: 0 0 20px 2px #ee8800;
+    transition: .6s;
+}
+
+.nothing a:hover {
+    background-color: #ee2299;
+    box-shadow: 0 0 20px 2px #ee2299;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+
+    header nav .navItems2 span {
+        display: none;
+    }
+
+    header nav .navItems2 i {
+        display: block;
+    }
+
+    header nav .navItems2 {
+        width: 5dvh;
+        position: relative;
+    }
+    
+    header nav .navItems2 span {
+        position: absolute;
+        top: 55px;
+        right: 5px;
+        cursor: pointer;
+        flex-wrap: nowrap;
+        background-color: #00000090;
+        backdrop-filter: blur(5px);
+        padding: 10px 10px;
+        vertical-align: middle;
+        transition: all .5s;
+        border-radius: 7px;
+    }
+
+    header nav .navItems2 span li {
+        padding: 15px 0;
+    }
+
+    header nav .navItems2:hover span {
+        display: inline-block;
+    }
+
+}
+
